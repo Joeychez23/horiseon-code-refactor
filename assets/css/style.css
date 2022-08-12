@@ -1,13 +1,46 @@
+/*
+UNIVERSAL!!!
+*/
+
+/*sets all to a border-box which allows height and width to remain fixed 
+but includes border thickness and padding inside the box*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/*sets background color for body element*/
 body {
     background-color: #d9dcd6;
 }
 
+/*sets the font-size of the paragraph text*/
+p {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+NAVBAR!!!
+*/
+
+/*sets fonts and adds background color/color to navigation menu*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,41 +48,72 @@ body {
     color: #ffffff;
 }
 
+/*
+sets h1 element from block to inline inside the navigation menu
+sets font size of h1 inside "header" class
+*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
+/*
+sets the div inside "header" with fonts/font-size/margins/padding
+set float which moves elements to the far right
+*/
 .header div {
+    float: right;
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
+/*
+removes the bullet points from the list
+should use reset stylesheet
+*/
 .header div ul {
     list-style-type: none;
 }
 
+/*
+sets the list element of the naviagtion menu to an inline 
+#changed display from inline block to inline
+*/
 .header div ul li {
-    display: inline-block;
+    display: inline;
     margin-left: 25px;
 }
 
-a {
+/*
+sets the text color of links
+*/
+.header div ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+LARGE IMAGE!!!
+*/
+
+/*sets the background image of the first 800px vertical of the site*/
 .hero {
     height: 800px;
     width: 100%;
@@ -59,80 +123,56 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+LARGE LEFTSIDE CONTENT BOX!!!
+75% WIDTH
+*/
+
+
+
+/*
+sets "content" class attributes
+inline-block take up ALL of the DEFINDED width  
+*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+/* sets all h2 elements inside .content div*/
+.content div h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
+/* sets all img elements inside .content div*/
+.content div img {
+    max-height: 200px;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+/*this would glitch out if i tried to condense it but it should work because they're all the same*/
+/*this would be a cool class example ;) */
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+/*sets attributes for the paragraph element of each class (the three below)*/
 
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
 .search-engine-optimization {
     margin-bottom: 20px;
@@ -161,33 +201,93 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
+
+
+
+
+
+
+
+
+
+/*floats the contents to the right side of the parent element box*/
+.float-right {
+    float: right;
+    margin-left: 25px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
+
+/*floats the contents to the left side of the parent element box*/
+.float-left {
+    float: left;
+    margin-right: 25px;
 }
 
-.social-media-marketing img {
-    max-height: 200px;
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+SMALL CONTENT BOX!!!
+20% WIDTH
+*/
+
+
+/*sets "benifits" class  box attributes
+floats all of the box the right*/
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
 }
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+.benefits div {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+.benefits div h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+.benefits div img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+FOOTER!!!
+*/
+
+
+/*sets "footer" class attrubutes*/
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +295,7 @@ p {
     text-align: center;
 }
 
+/*sets "footer" classes h2 element('s) attributes*/
 .footer h2 {
     font-size: 20px;
 }
