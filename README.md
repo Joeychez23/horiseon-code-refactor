@@ -11,9 +11,9 @@ The CSS has been cleaned up so that most of the class elements make up the begin
 
 A picture of the site will be provided bellow:
 
-<img src="/Users/joeysanchez/Desktop/TimeLost/bootcamp/horiseon-code-refactor/assets/images/Screen Shot 2022-08-18 at 7.57.35 PM.png" alt="Alt text" title="Optional title">
 <img src="./assets/images/Screen Shot 2022-08-18 at 7.57.35 PM.png" alt="Alt text" title="Optional title">
 <img src="./assets/images/Screen Shot 2022-08-18 at 7.58.15 PM.png" alt="Alt text" title="Optional title">
+<img src="./assets/images/Screen Shot 2022-08-18 at 7.58.18 PM.png" alt="Alt text" title="Optional title">
 
 ## Pages
 
